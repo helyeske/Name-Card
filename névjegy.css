@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: url(új/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	display: table;
+	justify-content: center;
+	vertical-align: middle;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+}
+
+.profile-card{
+	display: table-cell;
+	vertical-align: middle;
+	align-items: center;
+	left: 50%;
+	width: 500px;
+	background-color: rgba(255,255,255,.3);
+	box-shadow: hsla(0, 0%, 0%, .4) 10px 10px 80px;
+	border-radius: 10px;
+	height: 100;
+	min-height: 400px;
+	
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 2px solid black;
+	transition: all 0.5s ease-in-out;
+	filter: 
+}
+
+img:hover {
+	transform: scale(1.1)
+}
+
+.content {
+	font-size: 1.1rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.content, .links .head {
+	width: 90%;
+	padding-top: 1rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+a {
+	letter-spacing: 2px;
+	padding-left: 5%;
+}
+
+
+.links p {
+	font-size: 1.05rem;
+	font-weight: 600;
+	padding: 1rem;
+}
+
+
+.data::after {
+	display: block;
+	content: "";
+	background-color: floralwhite;
+	height: 1px;
+	margin: 0.5rem auto; 
+	width: 90%;
+}
+
+.content::after {
+	display: block;
+	content: "";
+	background-color: floralwhite;
+	height: 1px;
+	margin: 0.5rem auto; 
+}
+
+a {
+	background-color: rgba(192,192,192,.3);
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px;
+	text-decoration: none;
+	color: darkblue;
+}
+
+nav .Reference:hover {
+	color:darkgoldenrod;
+	background-color: dimgrey;
+	transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 500px) {
+	body {
+		display: flex;
+		justify-content: center;
+	}
+}
